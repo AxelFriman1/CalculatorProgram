@@ -52,7 +52,7 @@
             BtnClearEntry = new CustomButton.CustomButton1();
             BtnClear = new CustomButton.CustomButton1();
             BtnDivide = new CustomButton.CustomButton1();
-            BtnPowerOfX = new CustomButton.CustomButton1();
+            Btn1X = new CustomButton.CustomButton1();
             BtnPowerOf2 = new CustomButton.CustomButton1();
             BtnSquareRoot = new CustomButton.CustomButton1();
             BtnMultiply = new CustomButton.CustomButton1();
@@ -120,6 +120,7 @@
             // 
             // BtnExit
             // 
+            BtnExit.BackColor = Color.FromArgb(31, 28, 24);
             BtnExit.Dock = DockStyle.Right;
             BtnExit.FlatAppearance.BorderSize = 0;
             BtnExit.FlatAppearance.MouseOverBackColor = Color.Red;
@@ -132,7 +133,8 @@
             BtnExit.Size = new Size(50, 60);
             BtnExit.TabIndex = 0;
             BtnExit.Text = "×";
-            BtnExit.UseVisualStyleBackColor = true;
+            BtnExit.UseVisualStyleBackColor = false;
+            BtnExit.Click += BtnExit_Click;
             // 
             // PnlHistory
             // 
@@ -251,8 +253,8 @@
             // 
             // BtnBackspace
             // 
-            BtnBackspace.BackColor = Color.FromArgb(51, 47, 41);
-            BtnBackspace.BackgroundColor = Color.FromArgb(51, 47, 41);
+            BtnBackspace.BackColor = Color.FromArgb(43, 39, 34);
+            BtnBackspace.BackgroundColor = Color.FromArgb(43, 39, 34);
             BtnBackspace.BorderRadius = 20;
             BtnBackspace.BorderSize = 0;
             BtnBackspace.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
@@ -391,8 +393,8 @@
             // 
             // BtnPercent
             // 
-            BtnPercent.BackColor = Color.FromArgb(51, 47, 41);
-            BtnPercent.BackgroundColor = Color.FromArgb(51, 47, 41);
+            BtnPercent.BackColor = Color.FromArgb(43, 39, 34);
+            BtnPercent.BackgroundColor = Color.FromArgb(43, 39, 34);
             BtnPercent.BorderRadius = 20;
             BtnPercent.BorderSize = 0;
             BtnPercent.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
@@ -408,11 +410,12 @@
             BtnPercent.Text = "%";
             BtnPercent.TextColor = Color.White;
             BtnPercent.UseVisualStyleBackColor = false;
+            BtnPercent.Click += BtnMathFunctions_Click;
             // 
             // BtnClearEntry
             // 
-            BtnClearEntry.BackColor = Color.FromArgb(51, 47, 41);
-            BtnClearEntry.BackgroundColor = Color.FromArgb(51, 47, 41);
+            BtnClearEntry.BackColor = Color.FromArgb(43, 39, 34);
+            BtnClearEntry.BackgroundColor = Color.FromArgb(43, 39, 34);
             BtnClearEntry.BorderRadius = 20;
             BtnClearEntry.BorderSize = 0;
             BtnClearEntry.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
@@ -432,8 +435,8 @@
             // 
             // BtnClear
             // 
-            BtnClear.BackColor = Color.FromArgb(51, 47, 41);
-            BtnClear.BackgroundColor = Color.FromArgb(51, 47, 41);
+            BtnClear.BackColor = Color.FromArgb(43, 39, 34);
+            BtnClear.BackgroundColor = Color.FromArgb(43, 39, 34);
             BtnClear.BorderRadius = 20;
             BtnClear.BorderSize = 0;
             BtnClear.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
@@ -453,8 +456,8 @@
             // 
             // BtnDivide
             // 
-            BtnDivide.BackColor = Color.FromArgb(51, 47, 41);
-            BtnDivide.BackgroundColor = Color.FromArgb(51, 47, 41);
+            BtnDivide.BackColor = Color.FromArgb(43, 39, 34);
+            BtnDivide.BackgroundColor = Color.FromArgb(43, 39, 34);
             BtnDivide.BorderRadius = 20;
             BtnDivide.BorderSize = 0;
             BtnDivide.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
@@ -472,30 +475,31 @@
             BtnDivide.UseVisualStyleBackColor = false;
             BtnDivide.Click += BtnOperation_Click;
             // 
-            // BtnPowerOfX
+            // Btn1X
             // 
-            BtnPowerOfX.BackColor = Color.FromArgb(51, 47, 41);
-            BtnPowerOfX.BackgroundColor = Color.FromArgb(51, 47, 41);
-            BtnPowerOfX.BorderRadius = 20;
-            BtnPowerOfX.BorderSize = 0;
-            BtnPowerOfX.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
-            BtnPowerOfX.FlatAppearance.BorderSize = 0;
-            BtnPowerOfX.FlatStyle = FlatStyle.Flat;
-            BtnPowerOfX.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            BtnPowerOfX.ForeColor = Color.White;
-            BtnPowerOfX.Location = new Point(7, 361);
-            BtnPowerOfX.Margin = new Padding(0);
-            BtnPowerOfX.Name = "BtnPowerOfX";
-            BtnPowerOfX.Size = new Size(115, 75);
-            BtnPowerOfX.TabIndex = 5;
-            BtnPowerOfX.Text = "^x";
-            BtnPowerOfX.TextColor = Color.White;
-            BtnPowerOfX.UseVisualStyleBackColor = false;
+            Btn1X.BackColor = Color.FromArgb(43, 39, 34);
+            Btn1X.BackgroundColor = Color.FromArgb(43, 39, 34);
+            Btn1X.BorderRadius = 20;
+            Btn1X.BorderSize = 0;
+            Btn1X.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
+            Btn1X.FlatAppearance.BorderSize = 0;
+            Btn1X.FlatStyle = FlatStyle.Flat;
+            Btn1X.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            Btn1X.ForeColor = Color.White;
+            Btn1X.Location = new Point(7, 361);
+            Btn1X.Margin = new Padding(0);
+            Btn1X.Name = "Btn1X";
+            Btn1X.Size = new Size(115, 75);
+            Btn1X.TabIndex = 5;
+            Btn1X.Text = "1/x";
+            Btn1X.TextColor = Color.White;
+            Btn1X.UseVisualStyleBackColor = false;
+            Btn1X.Click += BtnMathFunctions_Click;
             // 
             // BtnPowerOf2
             // 
-            BtnPowerOf2.BackColor = Color.FromArgb(51, 47, 41);
-            BtnPowerOf2.BackgroundColor = Color.FromArgb(51, 47, 41);
+            BtnPowerOf2.BackColor = Color.FromArgb(43, 39, 34);
+            BtnPowerOf2.BackgroundColor = Color.FromArgb(43, 39, 34);
             BtnPowerOf2.BorderRadius = 20;
             BtnPowerOf2.BorderSize = 0;
             BtnPowerOf2.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
@@ -511,11 +515,12 @@
             BtnPowerOf2.Text = "^2";
             BtnPowerOf2.TextColor = Color.White;
             BtnPowerOf2.UseVisualStyleBackColor = false;
+            BtnPowerOf2.Click += BtnMathFunctions_Click;
             // 
             // BtnSquareRoot
             // 
-            BtnSquareRoot.BackColor = Color.FromArgb(51, 47, 41);
-            BtnSquareRoot.BackgroundColor = Color.FromArgb(51, 47, 41);
+            BtnSquareRoot.BackColor = Color.FromArgb(43, 39, 34);
+            BtnSquareRoot.BackgroundColor = Color.FromArgb(43, 39, 34);
             BtnSquareRoot.BorderRadius = 20;
             BtnSquareRoot.BorderSize = 0;
             BtnSquareRoot.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
@@ -531,11 +536,12 @@
             BtnSquareRoot.Text = "√x";
             BtnSquareRoot.TextColor = Color.White;
             BtnSquareRoot.UseVisualStyleBackColor = false;
+            BtnSquareRoot.Click += BtnMathFunctions_Click;
             // 
             // BtnMultiply
             // 
-            BtnMultiply.BackColor = Color.FromArgb(51, 47, 41);
-            BtnMultiply.BackgroundColor = Color.FromArgb(51, 47, 41);
+            BtnMultiply.BackColor = Color.FromArgb(43, 39, 34);
+            BtnMultiply.BackgroundColor = Color.FromArgb(43, 39, 34);
             BtnMultiply.BorderRadius = 20;
             BtnMultiply.BorderSize = 0;
             BtnMultiply.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
@@ -576,8 +582,8 @@
             // 
             // BtnSubtract
             // 
-            BtnSubtract.BackColor = Color.FromArgb(51, 47, 41);
-            BtnSubtract.BackgroundColor = Color.FromArgb(51, 47, 41);
+            BtnSubtract.BackColor = Color.FromArgb(43, 39, 34);
+            BtnSubtract.BackgroundColor = Color.FromArgb(43, 39, 34);
             BtnSubtract.BorderRadius = 20;
             BtnSubtract.BorderSize = 0;
             BtnSubtract.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
@@ -702,8 +708,8 @@
             // 
             // BtnAdd
             // 
-            BtnAdd.BackColor = Color.FromArgb(51, 47, 41);
-            BtnAdd.BackgroundColor = Color.FromArgb(51, 47, 41);
+            BtnAdd.BackColor = Color.FromArgb(43, 39, 34);
+            BtnAdd.BackgroundColor = Color.FromArgb(43, 39, 34);
             BtnAdd.BorderRadius = 20;
             BtnAdd.BorderSize = 0;
             BtnAdd.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
@@ -744,8 +750,8 @@
             // 
             // BtnEquals
             // 
-            BtnEquals.BackColor = Color.FromArgb(51, 47, 41);
-            BtnEquals.BackgroundColor = Color.FromArgb(51, 47, 41);
+            BtnEquals.BackColor = Color.FromArgb(191, 111, 11);
+            BtnEquals.BackgroundColor = Color.FromArgb(191, 111, 11);
             BtnEquals.BorderRadius = 20;
             BtnEquals.BorderSize = 0;
             BtnEquals.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
@@ -893,7 +899,7 @@
             Controls.Add(BtnClear);
             Controls.Add(BtnNumber8);
             Controls.Add(BtnEquals);
-            Controls.Add(BtnPowerOfX);
+            Controls.Add(Btn1X);
             Controls.Add(BtnSubtract);
             Controls.Add(BtnNumber1);
             Controls.Add(BtnClearEntry);
@@ -946,7 +952,7 @@
         private CustomButton.CustomButton1 BtnClearEntry;
         private CustomButton.CustomButton1 BtnClear;
         private CustomButton.CustomButton1 BtnDivide;
-        private CustomButton.CustomButton1 BtnPowerOfX;
+        private CustomButton.CustomButton1 Btn1X;
         private CustomButton.CustomButton1 BtnPowerOf2;
         private CustomButton.CustomButton1 BtnSquareRoot;
         private CustomButton.CustomButton1 BtnMultiply;

@@ -122,5 +122,39 @@ namespace CalculatorProgram
         {
             SumDisplay.Text = "0";
         }
+
+        private void BtnMathFunctions_Click(object sender, EventArgs e)
+        {
+            CustomButton1 button = (CustomButton1)sender;
+            Operation = button.Text;
+            switch (Operation)
+            {
+                case "√x":
+                    NumberDisplay.Text = $"√({SumDisplay.Text})";
+                    SumDisplay.Text = Convert.ToString(Math.Sqrt(Double.Parse(SumDisplay.Text)));
+                    break;
+                case "^2":
+                    NumberDisplay.Text = $"({SumDisplay.Text})^2";
+                    SumDisplay.Text = Convert.ToString(Convert.ToDouble(SumDisplay.Text) * Convert.ToDouble(SumDisplay.Text));
+                    break;
+                case "1/x":
+                    NumberDisplay.Text = $"1/({SumDisplay.Text})";
+                    SumDisplay.Text = Convert.ToString(1.0 / Convert.ToDouble(SumDisplay.Text));
+                    break;
+                case "%":
+                    NumberDisplay.Text = $"%({SumDisplay.Text})";
+                    SumDisplay.Text = Convert.ToString(Convert.ToDouble(SumDisplay.Text) / Convert.ToDouble(100));
+                    break;
+                case "±":
+                    SumDisplay.Text = Convert.ToString(-1 * Convert.ToDouble(SumDisplay.Text));
+                    break;
+            }
+            RtBoxDisplayHistory.AppendText($"{NumberDisplay.Text} = {SumDisplay.Text} \n");
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
