@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace CustomButton
 {
-    public class CustomButton :Button
+    public class CustomButton1 :Button
     {
         private int borderSize = 0;
         private int borderRadius = 50;
@@ -29,7 +29,7 @@ namespace CustomButton
             get => ForeColor; set { ForeColor = value; }
         }
 
-        public CustomButton()
+        public CustomButton1()
         {
             Size = new Size(200, 100);
             FlatAppearance.BorderSize = 0;

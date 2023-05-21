@@ -41,36 +41,36 @@
             BtnHistory = new Button();
             NumberDisplay = new TextBox();
             SumDisplay = new TextBox();
-            BtnBackspace = new CustomButton.CustomButton();
-            customButton2 = new CustomButton.CustomButton();
-            customButton3 = new CustomButton.CustomButton();
-            customButton4 = new CustomButton.CustomButton();
-            customButton5 = new CustomButton.CustomButton();
-            customButton6 = new CustomButton.CustomButton();
-            customButton7 = new CustomButton.CustomButton();
-            BtnPercent = new CustomButton.CustomButton();
-            BtnClearEntry = new CustomButton.CustomButton();
-            BtnClear = new CustomButton.CustomButton();
-            BtnDivide = new CustomButton.CustomButton();
-            BtnPowerOfX = new CustomButton.CustomButton();
-            BtnPowerOf2 = new CustomButton.CustomButton();
-            BtnSquareRoot = new CustomButton.CustomButton();
-            BtnMultiply = new CustomButton.CustomButton();
-            BtnNumber7 = new CustomButton.CustomButton();
-            BtnSubtract = new CustomButton.CustomButton();
-            BtnNumber8 = new CustomButton.CustomButton();
-            BtnNumber4 = new CustomButton.CustomButton();
-            BtnNumber9 = new CustomButton.CustomButton();
-            BtnNumber5 = new CustomButton.CustomButton();
-            BtnNumber6 = new CustomButton.CustomButton();
-            BtnAdd = new CustomButton.CustomButton();
-            BtnNumber1 = new CustomButton.CustomButton();
-            BtnEquals = new CustomButton.CustomButton();
-            BtnNumber2 = new CustomButton.CustomButton();
-            BtnPM = new CustomButton.CustomButton();
-            BtnNumber3 = new CustomButton.CustomButton();
-            BtnNumber0 = new CustomButton.CustomButton();
-            BtnDecimal = new CustomButton.CustomButton();
+            BtnBackspace = new CustomButton.CustomButton1();
+            customButton2 = new CustomButton.CustomButton1();
+            customButton3 = new CustomButton.CustomButton1();
+            customButton4 = new CustomButton.CustomButton1();
+            customButton5 = new CustomButton.CustomButton1();
+            customButton6 = new CustomButton.CustomButton1();
+            customButton7 = new CustomButton.CustomButton1();
+            BtnPercent = new CustomButton.CustomButton1();
+            BtnClearEntry = new CustomButton.CustomButton1();
+            BtnClear = new CustomButton.CustomButton1();
+            BtnDivide = new CustomButton.CustomButton1();
+            BtnPowerOfX = new CustomButton.CustomButton1();
+            BtnPowerOf2 = new CustomButton.CustomButton1();
+            BtnSquareRoot = new CustomButton.CustomButton1();
+            BtnMultiply = new CustomButton.CustomButton1();
+            BtnNumber7 = new CustomButton.CustomButton1();
+            BtnSubtract = new CustomButton.CustomButton1();
+            BtnNumber8 = new CustomButton.CustomButton1();
+            BtnNumber4 = new CustomButton.CustomButton1();
+            BtnNumber9 = new CustomButton.CustomButton1();
+            BtnNumber5 = new CustomButton.CustomButton1();
+            BtnNumber6 = new CustomButton.CustomButton1();
+            BtnAdd = new CustomButton.CustomButton1();
+            BtnNumber1 = new CustomButton.CustomButton1();
+            BtnEquals = new CustomButton.CustomButton1();
+            BtnNumber2 = new CustomButton.CustomButton1();
+            BtnPM = new CustomButton.CustomButton1();
+            BtnNumber3 = new CustomButton.CustomButton1();
+            BtnNumber0 = new CustomButton.CustomButton1();
+            BtnDecimal = new CustomButton.CustomButton1();
             PnlTitle.SuspendLayout();
             PnlHistory.SuspendLayout();
             panel1.SuspendLayout();
@@ -234,6 +234,7 @@
             NumberDisplay.TabIndex = 3;
             NumberDisplay.Text = "0";
             NumberDisplay.TextAlign = HorizontalAlignment.Right;
+            NumberDisplay.Click += BtnOperation_Click;
             // 
             // SumDisplay
             // 
@@ -469,6 +470,7 @@
             BtnDivide.Text = "÷";
             BtnDivide.TextColor = Color.White;
             BtnDivide.UseVisualStyleBackColor = false;
+            BtnDivide.Click += BtnOperation_Click;
             // 
             // BtnPowerOfX
             // 
@@ -549,6 +551,7 @@
             BtnMultiply.Text = "×";
             BtnMultiply.TextColor = Color.White;
             BtnMultiply.UseVisualStyleBackColor = false;
+            BtnMultiply.Click += BtnOperation_Click;
             // 
             // BtnNumber7
             // 
@@ -590,6 +593,7 @@
             BtnSubtract.Text = "−";
             BtnSubtract.TextColor = Color.White;
             BtnSubtract.UseVisualStyleBackColor = false;
+            BtnSubtract.Click += BtnOperation_Click;
             // 
             // BtnNumber8
             // 
@@ -715,6 +719,7 @@
             BtnAdd.Text = "+";
             BtnAdd.TextColor = Color.White;
             BtnAdd.UseVisualStyleBackColor = false;
+            BtnAdd.Click += BtnOperation_Click;
             // 
             // BtnNumber1
             // 
@@ -756,6 +761,7 @@
             BtnEquals.Text = "=";
             BtnEquals.TextColor = Color.White;
             BtnEquals.UseVisualStyleBackColor = false;
+            BtnEquals.Click += BtnEquals_Click;
             // 
             // BtnNumber2
             // 
@@ -929,35 +935,35 @@
         private TextBox SumDisplay;
         private RichTextBox richTextBox1;
         private Button BtnClearHistory;
-        private CustomButton.CustomButton BtnBackspace;
-        private CustomButton.CustomButton customButton2;
-        private CustomButton.CustomButton customButton3;
-        private CustomButton.CustomButton customButton4;
-        private CustomButton.CustomButton customButton5;
-        private CustomButton.CustomButton customButton6;
-        private CustomButton.CustomButton customButton7;
-        private CustomButton.CustomButton BtnPercent;
-        private CustomButton.CustomButton BtnClearEntry;
-        private CustomButton.CustomButton BtnClear;
-        private CustomButton.CustomButton BtnDivide;
-        private CustomButton.CustomButton BtnPowerOfX;
-        private CustomButton.CustomButton BtnPowerOf2;
-        private CustomButton.CustomButton BtnSquareRoot;
-        private CustomButton.CustomButton BtnMultiply;
-        private CustomButton.CustomButton BtnNumber7;
-        private CustomButton.CustomButton BtnSubtract;
-        private CustomButton.CustomButton BtnNumber8;
-        private CustomButton.CustomButton BtnNumber4;
-        private CustomButton.CustomButton BtnNumber9;
-        private CustomButton.CustomButton BtnNumber5;
-        private CustomButton.CustomButton BtnNumber6;
-        private CustomButton.CustomButton BtnAdd;
-        private CustomButton.CustomButton BtnNumber1;
-        private CustomButton.CustomButton BtnEquals;
-        private CustomButton.CustomButton BtnNumber2;
-        private CustomButton.CustomButton BtnPM;
-        private CustomButton.CustomButton BtnNumber3;
-        private CustomButton.CustomButton BtnNumber0;
-        private CustomButton.CustomButton BtnDecimal;
+        private CustomButton.CustomButton1 BtnBackspace;
+        private CustomButton.CustomButton1 customButton2;
+        private CustomButton.CustomButton1 customButton3;
+        private CustomButton.CustomButton1 customButton4;
+        private CustomButton.CustomButton1 customButton5;
+        private CustomButton.CustomButton1 customButton6;
+        private CustomButton.CustomButton1 customButton7;
+        private CustomButton.CustomButton1 BtnPercent;
+        private CustomButton.CustomButton1 BtnClearEntry;
+        private CustomButton.CustomButton1 BtnClear;
+        private CustomButton.CustomButton1 BtnDivide;
+        private CustomButton.CustomButton1 BtnPowerOfX;
+        private CustomButton.CustomButton1 BtnPowerOf2;
+        private CustomButton.CustomButton1 BtnSquareRoot;
+        private CustomButton.CustomButton1 BtnMultiply;
+        private CustomButton.CustomButton1 BtnNumber7;
+        private CustomButton.CustomButton1 BtnSubtract;
+        private CustomButton.CustomButton1 BtnNumber8;
+        private CustomButton.CustomButton1 BtnNumber4;
+        private CustomButton.CustomButton1 BtnNumber9;
+        private CustomButton.CustomButton1 BtnNumber5;
+        private CustomButton.CustomButton1 BtnNumber6;
+        private CustomButton.CustomButton1 BtnAdd;
+        private CustomButton.CustomButton1 BtnNumber1;
+        private CustomButton.CustomButton1 BtnEquals;
+        private CustomButton.CustomButton1 BtnNumber2;
+        private CustomButton.CustomButton1 BtnPM;
+        private CustomButton.CustomButton1 BtnNumber3;
+        private CustomButton.CustomButton1 BtnNumber0;
+        private CustomButton.CustomButton1 BtnDecimal;
     }
 }
