@@ -70,6 +70,12 @@
             BtnNumber3 = new CustomButton.CustomButton1();
             BtnNumber0 = new CustomButton.CustomButton1();
             BtnDecimal = new CustomButton.CustomButton1();
+            customButton11 = new CustomButton.CustomButton1();
+            customButton12 = new CustomButton.CustomButton1();
+            customButton13 = new CustomButton.CustomButton1();
+            customButton14 = new CustomButton.CustomButton1();
+            customButton15 = new CustomButton.CustomButton1();
+            customButton16 = new CustomButton.CustomButton1();
             PnlTitle.SuspendLayout();
             PnlHistory.SuspendLayout();
             panel1.SuspendLayout();
@@ -84,7 +90,7 @@
             PnlTitle.Location = new Point(0, 0);
             PnlTitle.Margin = new Padding(0);
             PnlTitle.Name = "PnlTitle";
-            PnlTitle.Size = new Size(501, 60);
+            PnlTitle.Size = new Size(615, 60);
             PnlTitle.TabIndex = 0;
             // 
             // button2
@@ -94,7 +100,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(351, 0);
+            button2.Location = new Point(465, 0);
             button2.Margin = new Padding(0);
             button2.Name = "button2";
             button2.Size = new Size(50, 60);
@@ -109,7 +115,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(401, 0);
+            button1.Location = new Point(515, 0);
             button1.Margin = new Padding(0);
             button1.Name = "button1";
             button1.Size = new Size(50, 60);
@@ -126,7 +132,7 @@
             BtnExit.FlatStyle = FlatStyle.Flat;
             BtnExit.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             BtnExit.ForeColor = Color.White;
-            BtnExit.Location = new Point(451, 0);
+            BtnExit.Location = new Point(565, 0);
             BtnExit.Margin = new Padding(0);
             BtnExit.Name = "BtnExit";
             BtnExit.Size = new Size(50, 60);
@@ -142,7 +148,7 @@
             PnlHistory.Dock = DockStyle.Bottom;
             PnlHistory.Location = new Point(0, 814);
             PnlHistory.Name = "PnlHistory";
-            PnlHistory.Size = new Size(501, 5);
+            PnlHistory.Size = new Size(615, 5);
             PnlHistory.TabIndex = 1;
             // 
             // RtBoxDisplayHistory
@@ -155,7 +161,7 @@
             RtBoxDisplayHistory.Margin = new Padding(0);
             RtBoxDisplayHistory.Name = "RtBoxDisplayHistory";
             RtBoxDisplayHistory.ScrollBars = RichTextBoxScrollBars.Horizontal;
-            RtBoxDisplayHistory.Size = new Size(501, 0);
+            RtBoxDisplayHistory.Size = new Size(615, 0);
             RtBoxDisplayHistory.TabIndex = 4;
             RtBoxDisplayHistory.Text = "";
             // 
@@ -170,7 +176,7 @@
             BtnClearHistory.Location = new Point(0, -55);
             BtnClearHistory.Margin = new Padding(0);
             BtnClearHistory.Name = "BtnClearHistory";
-            BtnClearHistory.Size = new Size(501, 60);
+            BtnClearHistory.Size = new Size(615, 60);
             BtnClearHistory.TabIndex = 3;
             BtnClearHistory.UseVisualStyleBackColor = true;
             BtnClearHistory.Click += BtnClearHistory_Click;
@@ -182,7 +188,7 @@
             panel1.Location = new Point(0, 60);
             panel1.Margin = new Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(501, 60);
+            panel1.Size = new Size(615, 60);
             panel1.TabIndex = 2;
             // 
             // BtnHistory
@@ -193,7 +199,7 @@
             BtnHistory.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             BtnHistory.ForeColor = Color.White;
             BtnHistory.Image = (Image)resources.GetObject("BtnHistory.Image");
-            BtnHistory.Location = new Point(451, 0);
+            BtnHistory.Location = new Point(565, 0);
             BtnHistory.Margin = new Padding(0);
             BtnHistory.Name = "BtnHistory";
             BtnHistory.Size = new Size(50, 60);
@@ -212,7 +218,7 @@
             NumberDisplay.Margin = new Padding(0);
             NumberDisplay.Multiline = true;
             NumberDisplay.Name = "NumberDisplay";
-            NumberDisplay.Size = new Size(501, 45);
+            NumberDisplay.Size = new Size(615, 45);
             NumberDisplay.TabIndex = 3;
             NumberDisplay.Text = "0";
             NumberDisplay.TextAlign = HorizontalAlignment.Right;
@@ -229,7 +235,7 @@
             SumDisplay.Margin = new Padding(0);
             SumDisplay.Multiline = true;
             SumDisplay.Name = "SumDisplay";
-            SumDisplay.Size = new Size(501, 57);
+            SumDisplay.Size = new Size(615, 57);
             SumDisplay.TabIndex = 4;
             SumDisplay.Text = "0";
             SumDisplay.TextAlign = HorizontalAlignment.Right;
@@ -245,7 +251,7 @@
             BtnBackspace.FlatStyle = FlatStyle.Flat;
             BtnBackspace.ForeColor = Color.White;
             BtnBackspace.Image = Properties.Resources.clear__1_;
-            BtnBackspace.Location = new Point(374, 277);
+            BtnBackspace.Location = new Point(488, 277);
             BtnBackspace.Margin = new Padding(0);
             BtnBackspace.Name = "BtnBackspace";
             BtnBackspace.Size = new Size(115, 75);
@@ -406,7 +412,7 @@
             BtnClearEntry.FlatStyle = FlatStyle.Flat;
             BtnClearEntry.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             BtnClearEntry.ForeColor = Color.White;
-            BtnClearEntry.Location = new Point(130, 277);
+            BtnClearEntry.Location = new Point(368, 277);
             BtnClearEntry.Margin = new Padding(0);
             BtnClearEntry.Name = "BtnClearEntry";
             BtnClearEntry.Size = new Size(115, 75);
@@ -427,7 +433,7 @@
             BtnClear.FlatStyle = FlatStyle.Flat;
             BtnClear.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             BtnClear.ForeColor = Color.White;
-            BtnClear.Location = new Point(252, 277);
+            BtnClear.Location = new Point(248, 277);
             BtnClear.Margin = new Padding(0);
             BtnClear.Name = "BtnClear";
             BtnClear.Size = new Size(115, 75);
@@ -448,7 +454,7 @@
             BtnDivide.FlatStyle = FlatStyle.Flat;
             BtnDivide.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             BtnDivide.ForeColor = Color.White;
-            BtnDivide.Location = new Point(373, 361);
+            BtnDivide.Location = new Point(487, 361);
             BtnDivide.Margin = new Padding(0);
             BtnDivide.Name = "BtnDivide";
             BtnDivide.Size = new Size(115, 75);
@@ -490,7 +496,7 @@
             BtnPowerOf2.FlatStyle = FlatStyle.Flat;
             BtnPowerOf2.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             BtnPowerOf2.ForeColor = Color.White;
-            BtnPowerOf2.Location = new Point(129, 361);
+            BtnPowerOf2.Location = new Point(127, 362);
             BtnPowerOf2.Margin = new Padding(0);
             BtnPowerOf2.Name = "BtnPowerOf2";
             BtnPowerOf2.Size = new Size(115, 75);
@@ -511,7 +517,7 @@
             BtnSquareRoot.FlatStyle = FlatStyle.Flat;
             BtnSquareRoot.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             BtnSquareRoot.ForeColor = Color.White;
-            BtnSquareRoot.Location = new Point(251, 361);
+            BtnSquareRoot.Location = new Point(247, 361);
             BtnSquareRoot.Margin = new Padding(0);
             BtnSquareRoot.Name = "BtnSquareRoot";
             BtnSquareRoot.Size = new Size(115, 75);
@@ -532,7 +538,7 @@
             BtnMultiply.FlatStyle = FlatStyle.Flat;
             BtnMultiply.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             BtnMultiply.ForeColor = Color.White;
-            BtnMultiply.Location = new Point(374, 445);
+            BtnMultiply.Location = new Point(488, 445);
             BtnMultiply.Margin = new Padding(0);
             BtnMultiply.Name = "BtnMultiply";
             BtnMultiply.Size = new Size(115, 75);
@@ -574,7 +580,7 @@
             BtnSubtract.FlatStyle = FlatStyle.Flat;
             BtnSubtract.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             BtnSubtract.ForeColor = Color.White;
-            BtnSubtract.Location = new Point(373, 529);
+            BtnSubtract.Location = new Point(487, 529);
             BtnSubtract.Margin = new Padding(0);
             BtnSubtract.Name = "BtnSubtract";
             BtnSubtract.Size = new Size(115, 75);
@@ -595,7 +601,7 @@
             BtnNumber8.FlatStyle = FlatStyle.Flat;
             BtnNumber8.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             BtnNumber8.ForeColor = Color.White;
-            BtnNumber8.Location = new Point(130, 445);
+            BtnNumber8.Location = new Point(128, 445);
             BtnNumber8.Margin = new Padding(0);
             BtnNumber8.Name = "BtnNumber8";
             BtnNumber8.Size = new Size(115, 75);
@@ -637,7 +643,7 @@
             BtnNumber9.FlatStyle = FlatStyle.Flat;
             BtnNumber9.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             BtnNumber9.ForeColor = Color.White;
-            BtnNumber9.Location = new Point(252, 445);
+            BtnNumber9.Location = new Point(248, 445);
             BtnNumber9.Margin = new Padding(0);
             BtnNumber9.Name = "BtnNumber9";
             BtnNumber9.Size = new Size(115, 75);
@@ -658,7 +664,7 @@
             BtnNumber5.FlatStyle = FlatStyle.Flat;
             BtnNumber5.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             BtnNumber5.ForeColor = Color.White;
-            BtnNumber5.Location = new Point(129, 529);
+            BtnNumber5.Location = new Point(127, 529);
             BtnNumber5.Margin = new Padding(0);
             BtnNumber5.Name = "BtnNumber5";
             BtnNumber5.Size = new Size(115, 75);
@@ -679,7 +685,7 @@
             BtnNumber6.FlatStyle = FlatStyle.Flat;
             BtnNumber6.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             BtnNumber6.ForeColor = Color.White;
-            BtnNumber6.Location = new Point(251, 529);
+            BtnNumber6.Location = new Point(247, 529);
             BtnNumber6.Margin = new Padding(0);
             BtnNumber6.Name = "BtnNumber6";
             BtnNumber6.Size = new Size(115, 75);
@@ -700,7 +706,7 @@
             BtnAdd.FlatStyle = FlatStyle.Flat;
             BtnAdd.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             BtnAdd.ForeColor = Color.White;
-            BtnAdd.Location = new Point(373, 613);
+            BtnAdd.Location = new Point(487, 613);
             BtnAdd.Margin = new Padding(0);
             BtnAdd.Name = "BtnAdd";
             BtnAdd.Size = new Size(115, 75);
@@ -742,7 +748,7 @@
             BtnEquals.FlatStyle = FlatStyle.Flat;
             BtnEquals.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             BtnEquals.ForeColor = Color.White;
-            BtnEquals.Location = new Point(372, 697);
+            BtnEquals.Location = new Point(486, 697);
             BtnEquals.Margin = new Padding(0);
             BtnEquals.Name = "BtnEquals";
             BtnEquals.Size = new Size(115, 75);
@@ -763,7 +769,7 @@
             BtnNumber2.FlatStyle = FlatStyle.Flat;
             BtnNumber2.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             BtnNumber2.ForeColor = Color.White;
-            BtnNumber2.Location = new Point(129, 613);
+            BtnNumber2.Location = new Point(127, 613);
             BtnNumber2.Margin = new Padding(0);
             BtnNumber2.Name = "BtnNumber2";
             BtnNumber2.Size = new Size(115, 75);
@@ -804,7 +810,7 @@
             BtnNumber3.FlatStyle = FlatStyle.Flat;
             BtnNumber3.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             BtnNumber3.ForeColor = Color.White;
-            BtnNumber3.Location = new Point(251, 613);
+            BtnNumber3.Location = new Point(247, 613);
             BtnNumber3.Margin = new Padding(0);
             BtnNumber3.Name = "BtnNumber3";
             BtnNumber3.Size = new Size(115, 75);
@@ -825,7 +831,7 @@
             BtnNumber0.FlatStyle = FlatStyle.Flat;
             BtnNumber0.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             BtnNumber0.ForeColor = Color.White;
-            BtnNumber0.Location = new Point(128, 697);
+            BtnNumber0.Location = new Point(126, 697);
             BtnNumber0.Margin = new Padding(0);
             BtnNumber0.Name = "BtnNumber0";
             BtnNumber0.Size = new Size(115, 75);
@@ -846,7 +852,7 @@
             BtnDecimal.FlatStyle = FlatStyle.Flat;
             BtnDecimal.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             BtnDecimal.ForeColor = Color.White;
-            BtnDecimal.Location = new Point(250, 697);
+            BtnDecimal.Location = new Point(246, 697);
             BtnDecimal.Margin = new Padding(0);
             BtnDecimal.Name = "BtnDecimal";
             BtnDecimal.Size = new Size(115, 75);
@@ -856,11 +862,137 @@
             BtnDecimal.UseVisualStyleBackColor = false;
             BtnDecimal.Click += BtnNum_Click;
             // 
+            // customButton11
+            // 
+            customButton11.BackColor = Color.FromArgb(43, 39, 34);
+            customButton11.BackgroundColor = Color.FromArgb(43, 39, 34);
+            customButton11.BorderRadius = 20;
+            customButton11.BorderSize = 0;
+            customButton11.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
+            customButton11.FlatAppearance.BorderSize = 0;
+            customButton11.FlatStyle = FlatStyle.Flat;
+            customButton11.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            customButton11.ForeColor = Color.White;
+            customButton11.Location = new Point(128, 277);
+            customButton11.Margin = new Padding(0);
+            customButton11.Name = "customButton11";
+            customButton11.Size = new Size(115, 75);
+            customButton11.TabIndex = 5;
+            customButton11.Text = "^3";
+            customButton11.TextColor = Color.White;
+            customButton11.UseVisualStyleBackColor = false;
+            customButton11.Click += BtnMathFunctions_Click;
+            // 
+            // customButton12
+            // 
+            customButton12.BackColor = Color.FromArgb(43, 39, 34);
+            customButton12.BackgroundColor = Color.FromArgb(43, 39, 34);
+            customButton12.BorderRadius = 20;
+            customButton12.BorderSize = 0;
+            customButton12.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
+            customButton12.FlatAppearance.BorderSize = 0;
+            customButton12.FlatStyle = FlatStyle.Flat;
+            customButton12.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            customButton12.ForeColor = Color.White;
+            customButton12.Location = new Point(367, 361);
+            customButton12.Margin = new Padding(0);
+            customButton12.Name = "customButton12";
+            customButton12.Size = new Size(115, 75);
+            customButton12.TabIndex = 5;
+            customButton12.Text = "ln";
+            customButton12.TextColor = Color.White;
+            customButton12.UseVisualStyleBackColor = false;
+            customButton12.Click += BtnMathFunctions_Click;
+            // 
+            // customButton13
+            // 
+            customButton13.BackColor = Color.FromArgb(43, 39, 34);
+            customButton13.BackgroundColor = Color.FromArgb(43, 39, 34);
+            customButton13.BorderRadius = 20;
+            customButton13.BorderSize = 0;
+            customButton13.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
+            customButton13.FlatAppearance.BorderSize = 0;
+            customButton13.FlatStyle = FlatStyle.Flat;
+            customButton13.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            customButton13.ForeColor = Color.White;
+            customButton13.Location = new Point(368, 446);
+            customButton13.Margin = new Padding(0);
+            customButton13.Name = "customButton13";
+            customButton13.Size = new Size(115, 75);
+            customButton13.TabIndex = 5;
+            customButton13.Text = "log";
+            customButton13.TextColor = Color.White;
+            customButton13.UseVisualStyleBackColor = false;
+            customButton13.Click += BtnMathFunctions_Click;
+            // 
+            // customButton14
+            // 
+            customButton14.BackColor = Color.FromArgb(43, 39, 34);
+            customButton14.BackgroundColor = Color.FromArgb(43, 39, 34);
+            customButton14.BorderRadius = 20;
+            customButton14.BorderSize = 0;
+            customButton14.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
+            customButton14.FlatAppearance.BorderSize = 0;
+            customButton14.FlatStyle = FlatStyle.Flat;
+            customButton14.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            customButton14.ForeColor = Color.White;
+            customButton14.Location = new Point(367, 530);
+            customButton14.Margin = new Padding(0);
+            customButton14.Name = "customButton14";
+            customButton14.Size = new Size(115, 75);
+            customButton14.TabIndex = 5;
+            customButton14.Text = "sin";
+            customButton14.TextColor = Color.White;
+            customButton14.UseVisualStyleBackColor = false;
+            customButton14.Click += BtnMathFunctions_Click;
+            // 
+            // customButton15
+            // 
+            customButton15.BackColor = Color.FromArgb(43, 39, 34);
+            customButton15.BackgroundColor = Color.FromArgb(43, 39, 34);
+            customButton15.BorderRadius = 20;
+            customButton15.BorderSize = 0;
+            customButton15.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
+            customButton15.FlatAppearance.BorderSize = 0;
+            customButton15.FlatStyle = FlatStyle.Flat;
+            customButton15.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            customButton15.ForeColor = Color.White;
+            customButton15.Location = new Point(367, 613);
+            customButton15.Margin = new Padding(0);
+            customButton15.Name = "customButton15";
+            customButton15.Size = new Size(115, 75);
+            customButton15.TabIndex = 5;
+            customButton15.Text = "cos";
+            customButton15.TextColor = Color.White;
+            customButton15.UseVisualStyleBackColor = false;
+            customButton15.Click += BtnMathFunctions_Click;
+            // 
+            // customButton16
+            // 
+            customButton16.BackColor = Color.FromArgb(43, 39, 34);
+            customButton16.BackgroundColor = Color.FromArgb(43, 39, 34);
+            customButton16.BorderRadius = 20;
+            customButton16.BorderSize = 0;
+            customButton16.FlatAppearance.BorderColor = Color.FromArgb(38, 36, 36);
+            customButton16.FlatAppearance.BorderSize = 0;
+            customButton16.FlatStyle = FlatStyle.Flat;
+            customButton16.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            customButton16.ForeColor = Color.White;
+            customButton16.Location = new Point(366, 697);
+            customButton16.Margin = new Padding(0);
+            customButton16.Name = "customButton16";
+            customButton16.Size = new Size(115, 75);
+            customButton16.TabIndex = 5;
+            customButton16.Text = "tan";
+            customButton16.TextColor = Color.White;
+            customButton16.UseVisualStyleBackColor = false;
+            customButton16.Click += BtnMathFunctions_Click;
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(38, 36, 36);
-            ClientSize = new Size(501, 819);
+            ClientSize = new Size(615, 819);
             Controls.Add(PnlHistory);
             Controls.Add(customButton7);
             Controls.Add(customButton6);
@@ -873,6 +1005,12 @@
             Controls.Add(BtnSquareRoot);
             Controls.Add(BtnNumber0);
             Controls.Add(BtnNumber5);
+            Controls.Add(customButton16);
+            Controls.Add(customButton14);
+            Controls.Add(customButton15);
+            Controls.Add(customButton13);
+            Controls.Add(customButton12);
+            Controls.Add(customButton11);
             Controls.Add(BtnPowerOf2);
             Controls.Add(BtnNumber3);
             Controls.Add(BtnPM);
@@ -953,5 +1091,11 @@
         private CustomButton.CustomButton1 BtnNumber3;
         private CustomButton.CustomButton1 BtnNumber0;
         private CustomButton.CustomButton1 BtnDecimal;
+        private CustomButton.CustomButton1 customButton11;
+        private CustomButton.CustomButton1 customButton12;
+        private CustomButton.CustomButton1 customButton13;
+        private CustomButton.CustomButton1 customButton14;
+        private CustomButton.CustomButton1 customButton15;
+        private CustomButton.CustomButton1 customButton16;
     }
 }

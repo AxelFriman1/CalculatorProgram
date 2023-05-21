@@ -17,7 +17,7 @@ namespace CalculatorProgram
 
         private void BtnNum_Click(object sender, EventArgs e)
         {
-            if (SumDisplay.Text == "0" || EnterValue)  //SUMDISPLAY = TXTDISPLAY1
+            if (SumDisplay.Text == "0" || EnterValue)
             {
                 SumDisplay.Text = string.Empty;
             }
@@ -122,7 +122,6 @@ namespace CalculatorProgram
         {
             SumDisplay.Text = "0";
         }
-
         private void BtnMathFunctions_Click(object sender, EventArgs e)
         {
             CustomButton1 button = (CustomButton1)sender;
@@ -148,10 +147,35 @@ namespace CalculatorProgram
                 case "±":
                     SumDisplay.Text = Convert.ToString(-1 * Convert.ToDouble(SumDisplay.Text));
                     break;
+                case "tan":
+                    NumberDisplay.Text = $"tan({SumDisplay.Text})";
+                    SumDisplay.Text = Convert.ToString(Math.Tan(Convert.ToDouble(Convert.ToDouble(SumDisplay.Text) * (Math.PI / 180))));
+                    break;
+                case "cos":
+                    NumberDisplay.Text = $"cos({SumDisplay.Text})";
+                    SumDisplay.Text = Convert.ToString(Math.Cos(Convert.ToDouble(Convert.ToDouble(SumDisplay.Text) * (Math.PI / 180))));
+                    break;
+                case "sin":
+                    NumberDisplay.Text = $"sin({SumDisplay.Text})";
+                    SumDisplay.Text = Convert.ToString(Math.Sin(Convert.ToDouble(Convert.ToDouble(SumDisplay.Text) * (Math.PI / 180))));
+                    break;
+                case "log":
+                    NumberDisplay.Text = $"log({SumDisplay.Text})";
+                    SumDisplay.Text = Convert.ToString(Math.Log10(Convert.ToDouble(SumDisplay.Text)));
+                    break;
+                case "ln":
+                    NumberDisplay.Text = $"ln({SumDisplay.Text})";
+                    SumDisplay.Text = Convert.ToString(Math.Log(Convert.ToDouble(SumDisplay.Text)));
+                    break;
+                case "^3":
+                    NumberDisplay.Text = $"({SumDisplay.Text})^3";
+                    SumDisplay.Text = Convert.ToString(Math.Pow(Double.Parse(SumDisplay.Text), 3));
+                    break;
+
+
             }
             RtBoxDisplayHistory.AppendText($"{NumberDisplay.Text} = {SumDisplay.Text} \n");
         }
-
         private void BtnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
