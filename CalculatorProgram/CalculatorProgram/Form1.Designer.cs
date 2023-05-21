@@ -34,7 +34,7 @@
             button1 = new Button();
             BtnExit = new Button();
             PnlHistory = new Panel();
-            richTextBox1 = new RichTextBox();
+            RtBoxDisplayHistory = new RichTextBox();
             BtnClearHistory = new Button();
             panel1 = new Panel();
             BtnMenu = new Button();
@@ -92,7 +92,6 @@
             // 
             button2.Dock = DockStyle.Right;
             button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseOverBackColor = Color.Red;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = Color.White;
@@ -108,7 +107,6 @@
             // 
             button1.Dock = DockStyle.Right;
             button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseOverBackColor = Color.Red;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
@@ -138,7 +136,7 @@
             // 
             // PnlHistory
             // 
-            PnlHistory.Controls.Add(richTextBox1);
+            PnlHistory.Controls.Add(RtBoxDisplayHistory);
             PnlHistory.Controls.Add(BtnClearHistory);
             PnlHistory.Dock = DockStyle.Bottom;
             PnlHistory.Location = new Point(0, 814);
@@ -146,25 +144,24 @@
             PnlHistory.Size = new Size(501, 5);
             PnlHistory.TabIndex = 1;
             // 
-            // richTextBox1
+            // RtBoxDisplayHistory
             // 
-            richTextBox1.BackColor = Color.FromArgb(38, 36, 36);
-            richTextBox1.BorderStyle = BorderStyle.None;
-            richTextBox1.Dock = DockStyle.Fill;
-            richTextBox1.ForeColor = Color.White;
-            richTextBox1.Location = new Point(0, 0);
-            richTextBox1.Margin = new Padding(0);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.ScrollBars = RichTextBoxScrollBars.Horizontal;
-            richTextBox1.Size = new Size(501, 0);
-            richTextBox1.TabIndex = 4;
-            richTextBox1.Text = "";
+            RtBoxDisplayHistory.BackColor = Color.FromArgb(38, 36, 36);
+            RtBoxDisplayHistory.BorderStyle = BorderStyle.None;
+            RtBoxDisplayHistory.Dock = DockStyle.Fill;
+            RtBoxDisplayHistory.ForeColor = Color.White;
+            RtBoxDisplayHistory.Location = new Point(0, 0);
+            RtBoxDisplayHistory.Margin = new Padding(0);
+            RtBoxDisplayHistory.Name = "RtBoxDisplayHistory";
+            RtBoxDisplayHistory.ScrollBars = RichTextBoxScrollBars.Horizontal;
+            RtBoxDisplayHistory.Size = new Size(501, 0);
+            RtBoxDisplayHistory.TabIndex = 4;
+            RtBoxDisplayHistory.Text = "";
             // 
             // BtnClearHistory
             // 
             BtnClearHistory.Dock = DockStyle.Bottom;
             BtnClearHistory.FlatAppearance.BorderSize = 0;
-            BtnClearHistory.FlatAppearance.MouseOverBackColor = Color.Red;
             BtnClearHistory.FlatStyle = FlatStyle.Flat;
             BtnClearHistory.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             BtnClearHistory.ForeColor = Color.White;
@@ -218,6 +215,7 @@
             BtnHistory.Size = new Size(50, 60);
             BtnHistory.TabIndex = 0;
             BtnHistory.UseVisualStyleBackColor = true;
+            BtnHistory.Click += BtnHistory_Click;
             // 
             // NumberDisplay
             // 
@@ -872,6 +870,7 @@
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(38, 36, 36);
             ClientSize = new Size(501, 819);
+            Controls.Add(PnlHistory);
             Controls.Add(customButton7);
             Controls.Add(customButton6);
             Controls.Add(customButton5);
@@ -905,7 +904,6 @@
             Controls.Add(SumDisplay);
             Controls.Add(NumberDisplay);
             Controls.Add(panel1);
-            Controls.Add(PnlHistory);
             Controls.Add(PnlTitle);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = Color.White;
@@ -933,7 +931,7 @@
         private Button BtnHistory;
         private TextBox NumberDisplay;
         private TextBox SumDisplay;
-        private RichTextBox richTextBox1;
+        private RichTextBox RtBoxDisplayHistory;
         private Button BtnClearHistory;
         private CustomButton.CustomButton1 BtnBackspace;
         private CustomButton.CustomButton1 customButton2;

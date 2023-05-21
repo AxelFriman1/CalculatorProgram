@@ -1,4 +1,4 @@
-using CustomButton;
+﻿using CustomButton;
 using System.Runtime.InteropServices;
 
 namespace CalculatorProgram
@@ -63,8 +63,38 @@ namespace CalculatorProgram
             NumberDisplay.Text = $"{NumberDisplay.Text} {SumDisplay.Text}=";
             if (SumDisplay.Text != string.Empty)
             {
-
+                if (SumDisplay.Text == "0")
+                {
+                    NumberDisplay.Text = string.Empty;
+                }
+                switch (Operation)
+                {
+                    case "+":
+                        SumDisplay.Text = (Result + Double.Parse(SumDisplay.Text)).ToString();
+                        RtBoxDisplayHistory.AppendText($"{FirstNum}{SecondNum} = {SumDisplay.Text} \n");
+                        break;
+                    case "−":
+                        SumDisplay.Text = (Result - Double.Parse(SumDisplay.Text)).ToString();
+                        RtBoxDisplayHistory.AppendText($"{FirstNum}{SecondNum} = {SumDisplay.Text} \n");
+                        break;
+                    case "×":
+                        SumDisplay.Text = (Result * Double.Parse(SumDisplay.Text)).ToString();
+                        RtBoxDisplayHistory.AppendText($"{FirstNum}{SecondNum} = {SumDisplay.Text} \n");
+                        break;
+                    case "÷":
+                        SumDisplay.Text = (Result / Double.Parse(SumDisplay.Text)).ToString();
+                        RtBoxDisplayHistory.AppendText($"{FirstNum}{SecondNum} = {SumDisplay.Text} \n");
+                        break;
+                    default:
+                        NumberDisplay.Text = $"{SumDisplay.Text}=";
+                        break;
+                }
             }
+        }
+
+        private void BtnHistory_Click(object sender, EventArgs e)
+        {
+            PnlHistory.Height = (PnlHistory.Height == 5) ? PnlHistory.Height = 550 : 5;
         }
     }
 }
