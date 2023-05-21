@@ -36,7 +36,6 @@ namespace CalculatorProgram
             }
 
         }
-
         private void BtnOperation_Click(object sender, EventArgs e)
         {
             if (Result != 0)
@@ -56,7 +55,6 @@ namespace CalculatorProgram
                 SumDisplay.Text = string.Empty;
             }
         }
-
         private void BtnEquals_Click(object sender, EventArgs e)
         {
             SecondNum = SumDisplay.Text;
@@ -89,12 +87,40 @@ namespace CalculatorProgram
                         NumberDisplay.Text = $"{SumDisplay.Text}=";
                         break;
                 }
+
+                Result = Double.Parse(SumDisplay.Text);
+                Operation = string.Empty;
             }
         }
-
         private void BtnHistory_Click(object sender, EventArgs e)
         {
             PnlHistory.Height = (PnlHistory.Height == 5) ? PnlHistory.Height = 550 : 5;
+        }
+        private void BtnClearHistory_Click(object sender, EventArgs e)
+        {
+            RtBoxDisplayHistory.Clear();
+            RtBoxDisplayHistory.Text = "History Empty!";
+        }
+        private void BtnBackspace_Click(object sender, EventArgs e)
+        {
+            if (SumDisplay.Text.Length > 0)
+            {
+                SumDisplay.Text = SumDisplay.Text.Remove(SumDisplay.Text.Length - 1, 1);
+            }
+            if (SumDisplay.Text == string.Empty)
+            {
+                SumDisplay.Text = "0";
+            }
+        }
+        private void BtnClear_Click(object sender, EventArgs e)
+        {
+            SumDisplay.Text = "0";
+            NumberDisplay.Text = string.Empty;
+            Result = 0;
+        }
+        private void BtnClearEntry_Click(object sender, EventArgs e)
+        {
+            SumDisplay.Text = "0";
         }
     }
 }

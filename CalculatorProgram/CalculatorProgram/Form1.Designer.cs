@@ -172,6 +172,7 @@
             BtnClearHistory.Size = new Size(501, 60);
             BtnClearHistory.TabIndex = 3;
             BtnClearHistory.UseVisualStyleBackColor = true;
+            BtnClearHistory.Click += BtnClearHistory_Click;
             // 
             // panel1
             // 
@@ -188,7 +189,6 @@
             // 
             BtnMenu.Dock = DockStyle.Left;
             BtnMenu.FlatAppearance.BorderSize = 0;
-            BtnMenu.FlatAppearance.MouseOverBackColor = Color.Red;
             BtnMenu.FlatStyle = FlatStyle.Flat;
             BtnMenu.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             BtnMenu.ForeColor = Color.White;
@@ -204,7 +204,6 @@
             // 
             BtnHistory.Dock = DockStyle.Right;
             BtnHistory.FlatAppearance.BorderSize = 0;
-            BtnHistory.FlatAppearance.MouseOverBackColor = Color.Red;
             BtnHistory.FlatStyle = FlatStyle.Flat;
             BtnHistory.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
             BtnHistory.ForeColor = Color.White;
@@ -268,6 +267,7 @@
             BtnBackspace.TabIndex = 5;
             BtnBackspace.TextColor = Color.White;
             BtnBackspace.UseVisualStyleBackColor = false;
+            BtnBackspace.Click += BtnBackspace_Click;
             // 
             // customButton2
             // 
@@ -428,6 +428,7 @@
             BtnClearEntry.Text = "CE";
             BtnClearEntry.TextColor = Color.White;
             BtnClearEntry.UseVisualStyleBackColor = false;
+            BtnClearEntry.Click += BtnClearEntry_Click;
             // 
             // BtnClear
             // 
@@ -448,6 +449,7 @@
             BtnClear.Text = "C";
             BtnClear.TextColor = Color.White;
             BtnClear.UseVisualStyleBackColor = false;
+            BtnClear.Click += BtnClear_Click;
             // 
             // BtnDivide
             // 
