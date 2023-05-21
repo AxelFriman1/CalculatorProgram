@@ -37,7 +37,6 @@
             RtBoxDisplayHistory = new RichTextBox();
             BtnClearHistory = new Button();
             panel1 = new Panel();
-            BtnMenu = new Button();
             BtnHistory = new Button();
             NumberDisplay = new TextBox();
             SumDisplay = new TextBox();
@@ -120,7 +119,7 @@
             // 
             // BtnExit
             // 
-            BtnExit.BackColor = Color.FromArgb(31, 28, 24);
+            BtnExit.BackColor = Color.FromArgb(38, 36, 36);
             BtnExit.Dock = DockStyle.Right;
             BtnExit.FlatAppearance.BorderSize = 0;
             BtnExit.FlatAppearance.MouseOverBackColor = Color.Red;
@@ -178,7 +177,6 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(BtnMenu);
             panel1.Controls.Add(BtnHistory);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 60);
@@ -186,21 +184,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(501, 60);
             panel1.TabIndex = 2;
-            // 
-            // BtnMenu
-            // 
-            BtnMenu.Dock = DockStyle.Left;
-            BtnMenu.FlatAppearance.BorderSize = 0;
-            BtnMenu.FlatStyle = FlatStyle.Flat;
-            BtnMenu.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            BtnMenu.ForeColor = Color.White;
-            BtnMenu.Image = Properties.Resources.menu;
-            BtnMenu.Location = new Point(0, 0);
-            BtnMenu.Margin = new Padding(0);
-            BtnMenu.Name = "BtnMenu";
-            BtnMenu.Size = new Size(50, 60);
-            BtnMenu.TabIndex = 2;
-            BtnMenu.UseVisualStyleBackColor = true;
             // 
             // BtnHistory
             // 
@@ -935,7 +918,6 @@
         private Button button1;
         private Button button2;
         private Panel panel1;
-        private Button BtnMenu;
         private Button BtnHistory;
         private TextBox NumberDisplay;
         private TextBox SumDisplay;
