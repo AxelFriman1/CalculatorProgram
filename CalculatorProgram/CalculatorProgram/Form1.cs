@@ -1,44 +1,26 @@
+using System.Runtime.InteropServices;
+
 namespace CalculatorProgram
 {
     public partial class Form1 : Form
     {
+        Double Result = 0;
+        string Operation = string.Empty;
+        string FirstNum, SecondNum;
+        bool EnterValue = false;
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnNum_Click(object sender, EventArgs e)
         {
+            if (NumberDisplay.Text == "0" || EnterValue)
+            {
+                NumberDisplay.Text = string.Empty;
+            }
+            EnterValue = false;
 
         }
     }
